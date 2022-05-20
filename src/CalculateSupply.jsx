@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Supply from "./Supply";
 
 
-const CalculateSupply = () => {
+
+const CalculateSupply = ({ onChange }) => {
         const [b1value, setB1value] = useState('');
         const [b2value, setB2value] = useState('');
         const [b3value, setB3value] = useState('');
@@ -60,20 +60,15 @@ const CalculateSupply = () => {
                           ];
     
 
-       
 
         event.preventDefault();
         return SupplyArray;
 
     };
 
-    console.log(SupplyArray);
-
-  
-  
     return (
     <div className="main">
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit} value={SupplyArray}>
       <div className="field">      
         <label>
           Объемный вес торфа в Бункере 1:
@@ -114,7 +109,6 @@ const CalculateSupply = () => {
             <input className="btn" type="submit" value="Расчитать подачу торфа" />
       </div>      
       </form>
-      <Supply value={SupplyArray} onChange={() => setSupplyArray(handleSubmit)}/>
     </div> 
       )
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Hoppers from './components/Hoppers';
 import BoxesH from './components/BoxesH';
 import { AllBoxesName, boxesNameH, boxesNameLeft, boxesNameRight } from "./reducers/boxesName.js";
@@ -11,8 +11,15 @@ import BoxesRight from "./components/BoxesRight";
 
 const App = (props) => {
   
+  const [supply, setSupply] = useState(''); 
+
+  const handleSubmitChange = (supply) => {
+    setSupply(supply)
+  }
+
   return (
-      <>      
+      <>    
+          {supply}
           <Hoppers name={AllBoxesName}/>
           <div className="supply"></div>
           <div className="h1ForChoiseToFormulа">
@@ -21,7 +28,7 @@ const App = (props) => {
              <PeatSize />
             </div>  
           </div>
-          <CalculateSupply />
+          <CalculateSupply onChange={handleSubmitChange}/>
           <div className="Boxes">
             <BoxesH name={boxesNameH}/>
             <Boxesleft name={boxesNameLeft}/>
