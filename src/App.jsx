@@ -9,19 +9,19 @@ import BoxesRight from "./components/BoxesRight";
 
 
 
+
 const App = (props) => {
   
-  const [supply, setSupply] = useState(''); 
+  const [SupplyArray, setSupplyArray] = useState(''); 
 
-  const handleSubmitChange = (supply) => {
-    setSupply(supply)
+  const handleSubmitChange = (SupplyArray) => {
+    setSupplyArray(SupplyArray)
   }
+  console.log(SupplyArray);
 
   return (
-      <>    
-          {supply}
-          <Hoppers name={AllBoxesName}/>
-          <div className="supply"></div>
+      <>   
+          <Hoppers name={AllBoxesName} value={SupplyArray}/>
           <div className="h1ForChoiseToFormulа">
           <div className="generalChoisePeatSize">
               <h3>Выбрать необходимую фракцию торфа:</h3>

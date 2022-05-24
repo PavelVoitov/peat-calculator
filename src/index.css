@@ -201,7 +201,6 @@ body {
 
   .intoleftboxes {
     margin: 10px;
-    /* padding: 1%; */
     line-height: 10px;
   }
 
@@ -257,7 +256,6 @@ body {
     top: -8px;
     float: right;
     margin-left: 10px;
-    /* margin-right: 1px; */
   }
 
   .boxes-name-left-L {
@@ -289,5 +287,13 @@ body {
 
 .Boxes {
  position: sticky;
+
+}
+
+.supply {
+  background-color: rgb(240, 140, 140);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 
 }

@@ -9,7 +9,7 @@ const CalculateSupply = ({ onChange }) => {
         const [b4value, setB4value] = useState('');
         const [bSumValue, setBSumValue] = useState('');
         const [maxSupplly, setMaxSupplly] = useState('');
-        const [SupplyArray, setSupplyArray] = useState('');
+        const [SupplyArray] = useState('');
         
        
     
@@ -62,9 +62,11 @@ const CalculateSupply = ({ onChange }) => {
 
 
         event.preventDefault();
-        return SupplyArray;
+        console.log (SupplyArray);
+                          return onChange(SupplyArray);
 
     };
+
 
     return (
     <div className="main">
