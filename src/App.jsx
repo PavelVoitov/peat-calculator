@@ -10,7 +10,7 @@ import BoxesRight from "./components/BoxesRight";
 
 
 
-const App = (props) => {
+const App = () => {
   
   const [SupplyArray, setSupplyArray] = useState(''); 
 

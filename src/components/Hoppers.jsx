@@ -9,7 +9,6 @@ const Hoppers = (props) => {
         return (
             <>
                 <div className="hopper">
-                    {}
                     <div className="hopper-paint">
                         <p className="hopper-name">Бункер 1 <br />Номер бокса:</p>
                         <div className="select-css-margin-auto">

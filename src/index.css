@@ -76,9 +76,8 @@ body {
 
   .boxesH {
     display: block;
-    height:100px;
+    height: 100px;
     float:left; 
-    clear: left; 
     margin-top: 3%;
    
   }
@@ -169,9 +168,8 @@ body {
 
   .boxesLeft {
     display: block;
-    position: sticky;
-    float:left; 
-    clear: left; 
+    float: left; 
+   
     margin-top: 5%;
   }
   
@@ -205,18 +203,12 @@ body {
   }
 
   .boxesRight {
-    
-    position: sticky;
-    top: 0%;
-    right: 0px;
-    height: 100px;
     float: right;
     margin-top: 5%;
     
   }
   
   .boxesH-paint-right {
-    display: block;
     background-color: #98ff98;
     border-style: solid;
     padding: 3px;
@@ -286,7 +278,7 @@ body {
 }
 
 .Boxes {
- position: sticky;
+clear: both;
 
 }
 

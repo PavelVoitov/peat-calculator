@@ -49,9 +49,15 @@ const CalculateSupply = ({ onChange }) => {
         let B2Suplly = partPeatB2 * m1Part;
         let B3Suplly = partPeatB3 * m1Part;
         let B4Suplly = (partPeatB4 * m1Part) - 10;
-        let Supply = [Math.round(B1Suplly), Math.round(B2Suplly), Math.round(B3Suplly), Math.round(B4Suplly)]
-        alert(`Введите следующие значения подачи: ${Supply}`);
+        let Supply = [Math.round(B1Suplly), Math.round(B2Suplly), Math.round(B3Suplly), Math.round(B4Suplly)];
+        console.log(B1);
+        if (isNaN(b1value) || isNaN(b2value) || isNaN(b3value) || isNaN(b4value) || isNaN(bSumValue) || isNaN(maxSupplly)) {
+            alert("Введите корректные значения!");
+            return false;
+        } else {
+          alert(`Введите следующие значения подачи: ${Supply}`);
         
+        }
         let SupplyArray = [
                           {supply: Math.round(B1Suplly)},
                           {supply: Math.round(B2Suplly)},
@@ -75,37 +81,37 @@ const CalculateSupply = ({ onChange }) => {
         <label>
           Объемный вес торфа в Бункере 1:
         </label>
-          <input type="text" value={b1value} onChange={handleChange1} />
+          <input type="number" value={b1value} required onChange={handleChange1} />
       </div>
       <div className="field">
         <label>
           Объемный вес торфа в Бункере 2:
         </label>
-          <input type="text" value={b2value} onChange={handleChange2} />
+          <input type="number" value={b2value} required onChange={handleChange2} />
       </div>
       <div className="field">
         <label>
           Объемный вес торфа в Бункере 3:
         </label>
-          <input type="text" value={b3value} onChange={handleChange3} />
+          <input type="number" value={b3value} required onChange={handleChange3} />
       </div>
       <div className="field">    
         <label>
           Объемный вес торфа в Бункере 4:
         </label>
-          <input type="text" value={b4value} onChange={handleChange4} />
+          <input type="number" value={b4value} required onChange={handleChange4} />
       </div>
       <div className="field">    
         <label>
           Требуемый объемный вес торфа:
         </label>
-          <input type="text" value={bSumValue} onChange={handleChange5} />
+          <input type="number" value={bSumValue} required onChange={handleChange5} />
       </div>
       <div className="field">  
         <label>
           Макс. подача (куб.м):
         </label>
-          <input type="text" value={maxSupplly} onChange={handleChange6} />
+          <input type="number" value={maxSupplly} required onChange={handleChange6} />
       </div>
       <div className="field">
             <input className="btn" type="submit" value="Расчитать подачу торфа" />

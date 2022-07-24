@@ -1,6 +1,4 @@
 import React from "react";
-//дать имя каждому боксу
-//привязать имя к option
 
 
 
