@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PavelVoitov/peat-calculator.git/static/css/main.c3646073.css",
+    "main.js": "/PavelVoitov/peat-calculator.git/static/js/main.e9747244.js",
+    "index.html": "/PavelVoitov/peat-calculator.git/index.html",
+    "main.c3646073.css.map": "/PavelVoitov/peat-calculator.git/static/css/main.c3646073.css.map",
+    "main.e9747244.js.map": "/PavelVoitov/peat-calculator.git/static/js/main.e9747244.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3646073.css",
+    "static/js/main.e9747244.js"
+  ]
+}
