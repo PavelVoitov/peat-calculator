@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/PavelVoitov/peat-calculator.git/static/css/main.c3646073.css",
-    "main.js": "/PavelVoitov/peat-calculator.git/static/js/main.e9747244.js",
-    "index.html": "/PavelVoitov/peat-calculator.git/index.html",
-    "main.c3646073.css.map": "/PavelVoitov/peat-calculator.git/static/css/main.c3646073.css.map",
-    "main.e9747244.js.map": "/PavelVoitov/peat-calculator.git/static/js/main.e9747244.js.map"
+    "main.css": "/peat-calculator/static/css/main.c3646073.css",
+    "main.js": "/peat-calculator/static/js/main.e9747244.js",
+    "index.html": "/peat-calculator/index.html",
+    "main.c3646073.css.map": "/peat-calculator/static/css/main.c3646073.css.map",
+    "main.e9747244.js.map": "/peat-calculator/static/js/main.e9747244.js.map"
   },
   "entrypoints": [
     "static/css/main.c3646073.css",
